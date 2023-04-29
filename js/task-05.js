@@ -1,10 +1,10 @@
-const imputName = document.querySelector("#name-input");
+const inputName = document.querySelector("#name-input");
 const outputName = document.querySelector("#name-output");
-const a = () => {
-  if (imputName.value === "") {
+const checkForSymbol = () => {
+  if (inputName.value === "") {
       outputName.innerHTML = "Anonymous";
   } else {
-      outputName.innerHTML = imputName.value;
+      outputName.innerHTML = inputName.value;
   }
 };
-imputName.addEventListener("input", a);
+inputName.addEventListener("input", checkForSymbol);

@@ -22,5 +22,3 @@ const addItem = list.insertAdjacentHTML("afterbegin", markup);
 //   item.classList.add("item")
 // }
 // );
-
-console.log(list);
