@@ -2,7 +2,7 @@ const input = document.querySelector("#validation-input");
 const lengthForPass = input.getAttribute('data-length'); 
 
 const checkForSymbols = () => {
-  if (input.value.length >= Number(lengthForPass)) {
+  if (input.value.length === Number(lengthForPass)) {
     input.classList.remove("invalid")
       input.classList.add("valid")
   } else {
